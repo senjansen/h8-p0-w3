@@ -7,13 +7,12 @@ var input = [
 ]
 
 function dataHandling(data) {
+    var gabung = '';
     for (var i = 0; i <= data.length - 1; i++) {
-        console.log('Nomor ID: ' + data[i][0]);
-        console.log('Nama Lengkap: ' + data[i][1]);
-        console.log('TTL: ' + data[i][2] + ' ' + data[i][3]);
-        console.log('Hobi: ' + data[i][4]+ '\n');
+        gabung += 'Nomor ID: ' + data[i][0] + '\n' + 'Nama Lengkap: ' + data[i][1] + '\n' + 'TTL: ' + data[i][2] + ' ' + data[i][3] + '\n' + 'Hobi: ' + data[i][4] + '\n' + '\n';
     }
- }
+    return gabung;
+}
  
  console.log(dataHandling(input));
 

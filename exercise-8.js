@@ -6,7 +6,7 @@ function pasanganTerbesar(num) {
     var index = numString.indexOf(max) + 1;
     var next = numString[index];
     var res = max + next;
-    return res;
+    return parseInt(res);
 }
 
 // TEST CASES
